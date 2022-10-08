@@ -1,6 +1,6 @@
-@import url( ./___normalize.css );
-@import url( ./__variables.css );
-@import url( ./_primitives.css );
+@import url( normalize.css );
+@import url( variables.css );
+@import url( primitives.css );
 
 body {
 	background-color: var( --color-brand-primary );
@@ -144,8 +144,8 @@ a.cta {
 }
 
 .bg-green {
-	background-color: var( --color-brand-tertiary ); 
-	margin-inline: var( --space-s ); 
+	background-color: var( --color-brand-tertiary );
+	margin-inline: var( --space-s );
 }
 
 .vert {

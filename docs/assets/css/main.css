@@ -22,12 +22,12 @@ footer {
 	margin-inline: var( --space-m );
 }
 
-section {
+header {
 	border: var( --border-thin ) solid var( --color-dark );
-	margin: var( --space-xs );
+	margin: var( --space-m );
 }
 
-section div {
+header section {
 	background-color: var( --color-brand-primary );
 	border: var( --border-thin ) solid var( --color-dark );
 	margin: var( --space-xs );
@@ -69,25 +69,17 @@ h4 {
 }
 
 td {
-	font-size: calc( var( --step-4 ) * 1.8 );
-	height: 100px;
+	font-size: calc( var( --step-4 ) * 1.5 );
+	height: calc( ( var( --step-4) * 1.8 ) * 1.5 );
 	text-align: center;
-	width: 100px;
+	width: calc( ( var( --step-4) * 1.8 ) * 1.5 );
 }
 
 table {
-	margin: 5px auto;
+	margin: var( --space-3xs) auto;
 }
 
-.cover > main {
-	margin-block: auto;
-}
-
-.cover > :first-child {
-  margin-block-start: 0;
-}
-
-.cover > :last-child:not(h1) {
+.cover > :last-child {
   margin-block-end: var( --space-s );
 }
 

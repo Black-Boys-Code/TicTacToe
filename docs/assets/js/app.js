@@ -65,7 +65,7 @@ function checkGameState() {
     let gameState = checkwin();
     console.log(gameState);
 
-    document.getElementById("turn").innerHTML = "Player turn: " + ((turn == -1) ? "x" : "o");
+    document.getElementById("turn").innerHTML = "Player turn: " + ((turn == -1) ? "X" : "O");
     // clear after win
     if (Boolean(gameState)) {
         gameState === 1 ? x_score++ : o_score++;
@@ -79,7 +79,7 @@ alist.forEach((ele) => {
     ele.onclick = (e) => {
         if (typeof e.target.state !== "number" && !isGameOver) {
             e.target.state = turn;
-            e.target.innerHTML = e.target.state == 1 ? "x" : "o";
+            e.target.innerHTML = e.target.state == 1 ? "X" : "O";
             checkGameState();
             turn *= -1;
         }

@@ -26,8 +26,8 @@
 	--fluid-max-width: 1140;
 	--fluid-screen: 100vw;
 	--fluid-bp: calc( ( var( --fluid-screen ) - var( --fluid-min-width ) / 16 * 1rem ) / ( var( --fluid-max-width ) - var( --fluid-min-width ) ) );
-	--f-0-min: 20.00;
-	--f-0-max: 22.00;
+	--f-0-min: 16.00;
+	--f-0-max: 18.00;
 	--fc-3xs-min: ( var( --fc-s-min ) * 0.25 );
 	--fc-3xs-max: ( var( --fc-s-max ) * 0.25 );
 	--fc-2xs-min: ( var( --fc-s-min ) * 0.5 );

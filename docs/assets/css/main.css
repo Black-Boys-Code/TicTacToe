@@ -10,7 +10,7 @@ body {
 	margin: var( --space-l );
 }
 
-main > div {
+main > * {
 	border: var( --border-thin ) solid transparent;
 }
 
@@ -68,19 +68,13 @@ h4 {
 	font-size: var( --step-1 );
 }
 
-td {
-	font-size: calc( var( --step-4 ) * 1.5 );
-	height: calc( ( var( --step-4) * 1.8 ) * 1.5 );
-	text-align: center;
-	width: calc( ( var( --step-4) * 1.8 ) * 1.5 );
+
+.cover > main {
+	margin-block: 0 auto;
 }
 
-table {
-	margin: var( --space-3xs) auto;
-}
-
-.cover > :last-child {
-  margin-block-end: var( --space-s );
+.cover > footer {
+	margin-block-end: var( --space-s );
 }
 
 :focus {
@@ -142,7 +136,10 @@ a.cta {
 
 .bg-green {
 	background-color: var( --color-brand-tertiary );
-	margin-inline: var( --space-s );
+}
+
+.bg-orange {
+	background-color: var( --color-brand-quaternary );
 }
 
 .vert {
@@ -153,4 +150,88 @@ a.cta {
 .hori {
 	border-top: var( --border-thinnest ) solid var( --color-dark );
 	border-bottom: var( --border-thinnest ) solid var( --color-dark );
+}
+
+th,
+td {
+	padding-inline: var( --space-s );
+	white-space: nowrap;
+}
+
+.page1 table {
+	border-collapse: collapse;
+	max-width: max-content;
+	overflow: auto;
+	table-layout: fixed;
+	width: calc( 100% - var( --space-m ) );
+	white-space: nowrap;
+}
+
+.page1 td {
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.page1 td:nth-child( 2 ),
+.page1 td:last-child {
+	width: auto;
+}
+
+.page1 table code {
+	white-space: nowrap;
+}
+
+.page1 td,
+.page1 th {
+	border-width: var( --border-thin );
+	padding: var( --space-xs );
+	text-align: left;
+}
+
+.page1 td:first-child > span,
+.page1 tr:first-child td + td {
+	background-color: var( --color-brand-secondary );
+	color: white;
+	font-size: var( --step-0 );
+	white-space: nowrap;
+}
+
+.page1 tr :first-child {
+	padding-left: 0;
+}
+
+.page1 td:first-child > span {
+	padding: var( --space-xs ) var( --space-s );
+}
+
+.page1 tbody td:first-child span {
+	border-radius: var( --space-s );
+}
+
+.page1 tbody td:nth-child( 2 ) {
+	border-radius: var( --space-s ) 0 0 var( --space-s );
+}
+
+.page1 tbody td:last-child {
+	border-radius: 0 var( --space-s ) var( --space-s ) 0;
+}
+
+.page1 table ul {
+	margin: 0;
+}
+
+.page1 table ul li {
+	list-style-type: none;
+	margin-right: var( --space-3xs );
+}
+
+.page6 td {
+	font-size: calc( var( --step-4 ) * 1.5 );
+	height: calc( ( var( --step-4) * 1.8 ) * 1.5 );
+	text-align: center;
+	width: calc( ( var( --step-4) * 1.8 ) * 1.5 );
+}
+
+.page6 table {
+	margin: var( --space-3xs) auto;
 }

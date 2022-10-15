@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html class="page6 bg-green" lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>JavaScript challenge - TicTacToe</title>
+		<link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicons/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+		<link rel="manifest" href="assets/img/favicons/site.webmanifest">
+		<link rel="mask-icon" href="assets/img/favicons/safari-pinned-tab.svg" color="#6fb43f">
+		<link rel="shortcut icon" href="assets/img/favicons/favicon.ico">
+		<meta name="apple-mobile-web-app-title" content="Black Boys Code">
+		<meta name="application-name" content="Black Boys Code">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-config" content="assets/img/favicons/browserconfig.xml">
+		<meta name="theme-color" content="#ffffff">
+		<link rel="stylesheet" href="assets/css/main.css">
+	</head>
+	<body class="cover">
+		<header class="bg-green">
+			<section>
+				<h1>Tic Tac Toe</h1>
+				<p>Description of the page</p>
+			</section>
+		</header>
+		<main>
+			<div>
+				<h2>Rules:</h2>
+				<ul>
+					<li>The game is played on a grid that's 3 squares by 3 squares.</li>
+					<li>You are X, your friend is O.</li>
+					<li>Players take turns putting their marks in empty squares.</li>
+					<li>The first player to get 3 of their marks in a row (up, down, across, or diagonally) is the winner.</li>
+					<li>When all 9 squares are full, the game is over.</li>
+				</ul>
+			</div>
+			<div class="sidebar">
+				<table class="box tic-tac-toe">
+					<tr>
+						<td id="ul"></td>
+						<td id="um" class="vert"></td>
+						<td id="ur"></td>
+					</tr>
+					<tr>
+						<td id="ml" class="hori"></td>
+						<td id="mm" class="vert hori"></td>
+						<td id="mr" class="hori"></td>
+					</tr>
+					<tr>
+						<td id="bl"></td>
+						<td id="bm" class="vert"></td>
+						<td id="bm"></td>
+					</tr>
+				</table>
+				<aside>
+					<h2>Stats:</h2>
+					<div class="switcher">
+						<output id="turn">Player turn: X</output>
+						<output id="x_score">Score X: </output>
+						<output id="o_score">Score O: </output>
+					</div>
+					<button type="button" class="cta" id="clearButton">Clear</button>
+				</aside>
+			</div>
+		</main>
+		<script type="application/javascript" src="assets/js/app.js"></script>
+	</body>
+</html>

@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html class="page1 bg-green" lang="en">
+<html lang="en" class="page2 bg-orange">
 	<head>
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>CSS challenges - challenge 1</title>
 		<link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicons/apple-touch-icon.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
@@ -17,55 +17,69 @@
 		<meta name="msapplication-config" content="assets/img/favicons/browserconfig.xml">
 		<meta name="theme-color" content="#ffffff">
 		<link rel="stylesheet" href="assets/css/main.css">
+		<link rel="stylesheet" href="assets/css/challenge-1.css">
 	</head>
 	<body class="cover">
-		<header class="bg-green">
+		<header class="bg-orange">
 			<section>
 				<h1>CSS Styling</h1>
-				<p>Each CSS challenge will show you the amazing capabilities of CSS styling.</p>
 			</section>
 		</header>
 		<main>
-			<div>
-				<p>Click the link down below to advance to the next challenge.</p>
-			</div>
-			<div>
-				<p>A CSS rule-set consists of a selector and a declaration block:</p>
+			<section>
+				<h2>Challenge 1 - Font size</h2>
+				<p>Practice changing the font size to match the size number indicated.</p>
+				<p>Use the property <code>font-size</code> with the proper syntax.</p>
+			</section>
+			<div class="switcher">
 				<table class="box">
 					<thead>
 						<tr>
-							<th>selector</th>
-							<th>declaration</th>
-							<th>declaration</th>
+							<th>Font size</th>
+							<th>Bird name</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
-							<td><span>h1</span></td>
-							<td>{ color: blue;</td>
-							<td> font-size: 12px; }</td>
+							<td class="fs10">10</td>
+							<td class="flamingo">Flamingo</td>
 						</tr>
 						<tr>
-							<td>&nbsp;</td>
-							<td>
-								<ul class="cluster">
-								<li>property</li>
-								<li>value</li>
-								</ul>
-							</td>
-							<td>
-								<ul class="cluster">
-								<li>property</li>
-								<li>value</li>
-								</ul>
-							</td>
+							<td class="fs20">20</td>
+							<td class="bluejay">Blue jay</td>
+						</tr>
+						<tr>
+							<td class="fs30">30</td>
+							<td class="eagle">Eagle</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="box">
+					<thead>
+						<tr>
+							<th>Font size</th>
+							<th>Bird name</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="fs40">40</td>
+							<td class="robin">Robin</td>
+						</tr>
+						<tr>
+							<td class="fs50">50</td>
+							<td class="duck">Duck</td>
+						</tr>
+						<tr>
+							<td class="fs60">60</td>
+							<td class="owl">Owl</td>
 						</tr>
 					</tbody>
 				</table>
 			</div>
 		</main>
 		<footer>
-			<p>Go to the <a href="page2.html">first challenge</a>!</p>
+			<p>Go to the <a href="page3.html">next challenge</a>!</p>
 		</footer>
 	</body>
 </html>

@@ -1,9 +1,13 @@
 ## Tic Tac Toe
 
 - What is this project?
+This project was build for the Black Boys Code organization. Its intentions is to be used for teaching fundamental ideas in building a website. 
 - How does it work?
+Very simple, go to [](https://black-boys-code.github.io/TicTacToe). Or open this repo in Glitch project. 
 - Who will use this project?
+Black Boys Code students learning the basics of web development. 
 - What is the goal of this project?
+Inspire students on the potentions of web development skills. 
 
 ### How to Contribute
 See [CONTRIBUTING.md](CONTRIBUTING.md)
